@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Khairul | Dosen & Peneliti</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .lang-id, .lang-en { display: none; }
+    .active-lang { display: block; }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+  <!-- Bahasa Switch -->
+  <div class="text-right p-4">
+    <button onclick="switchLang('id')" class="px-3 py-1 text-sm bg-blue-600 text-white rounded">🇮🇩 ID</button>
+    <button onclick="switchLang('en')" class="px-3 py-1 text-sm bg-gray-300 rounded ml-2">🇬🇧 EN</button>
+  </div>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-800 to-blue-500 text-white py-16">
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 items-center gap-4">
+      <div>
+        <img src="asset/foto profil mk.jpg" alt="Foto Khairul" class="w-80 h-100 rounded-full mx-auto border-5 border-yellow-500 shadow-lg" />
+      </div>
+      <div>
+        <h1 class="text-4xl font-bold mb-3">Muhammad Khairul, S.Pd., M.Pd.</h1>
+        <h2 class="text-xl mb-4 lang-id active-lang">Dosen & Peneliti Pendidikan Geografi</h2>
+        <h2 class="text-xl mb-4 lang-en">Lecturer & Researcher in Geography Education</h2>
+        <p class="mb-4 lang-id active-lang">Saya adalah pendidik dan peneliti di bidang geografi pendidikan, literasi kebencanaan, dan lingkungan hidup berbasis nilai Qurani. Berpengalaman dalam pengembangan e-modul dan publikasi ilmiah internasional.</p>
+        <p class="mb-4 lang-en">I am an educator and researcher in geography education, disaster literacy, and environmental awareness with Qur'anic values. Experienced in digital module development and international publications.</p>
+        <div class="flex gap-4 mt-6">
+          <a href="#kontak" class="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-2 rounded-full font-semibold transition">Hubungi Saya</a>
+          <a href="asset/cv muhammad khairul (1).pdf" id="cv-btn" download class="bg-white text-blue-800 font-semibold border border-white px-6 py-2 rounded-full transition hover:bg-blue-100">
+            <i class="fas fa-file-download mr-2"></i> Unduh CV
+          </a>
+        </div>
+        <p id="cv-clicks" class="mt-3 text-sm text-yellow-200">CV diunduh 0 kali</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Singkat -->
+  <section class="py-8 bg-white text-center">
+    <p><strong>Email:</strong> <a href="mailto:m.khairul311089@upi.edu" class="text-blue-600">m.khairul311089@upi.edu</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/6285262608383" class="text-green-600">+62 852-6260-8383</a></p>
+    <p id="visit-count" class="mt-2 text-sm text-gray-500">Website dikunjungi 0 kali</p>
+  </section>
+
+  <!-- Pendidikan -->
+<section class="section bg-gray-100 py-12" id="pendidikan">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8 lang-id active-lang">Riwayat Pendidikan</h2>
+    <h2 class="text-3xl font-bold text-center mb-8 lang-en">Education History</h2>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded shadow">
+        <thead class="bg-blue-800 text-white">
+          <tr>
+            <th class="px-4 py-2">Tahun</th>
+            <th class="px-4 py-2 lang-id active-lang">Institusi</th>
+            <th class="px-4 py-2 lang-en">Institution</th>
+            <th class="px-4 py-2">Jenjang</th>
+            <th class="px-4 py-2">IPK</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-700 text-sm">
+          <tr class="border-t">
+            <td class="px-4 py-2">2007–2014</td>
+            <td class="px-4 py-2">Universitas Syiah Kuala</td>
+            <td class="px-4 py-2">Syiah Kuala University</td>
+            <td class="px-4 py-2">S1</td>
+            <td class="px-4 py-2">3.2</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2">2021–2022</td>
+            <td class="px-4 py-2">UPI – Psikologi Pendidikan</td>
+            <td class="px-4 py-2">Indonesia University of Education</td>
+            <td class="px-4 py-2">S2</td>
+            <td class="px-4 py-2">3.9</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2">2022–2024</td>
+            <td class="px-4 py-2">UPI – Pendidikan Geografi</td>
+            <td class="px-4 py-2">UPI – Geography Education</td>
+            <td class="px-4 py-2">S2</td>
+            <td class="px-4 py-2">3.9</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Keahlian -->
+<section class="py-12 bg-white">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6 lang-id active-lang">Keahlian</h2>
+    <h2 class="text-3xl font-bold mb-6 lang-en">Expertise</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Guru</span>
+      <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">Pembina Pramuka</span>
+      <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Peneliti</span>
+      <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Fotografi Lanskap</span>
+      <span class="bg-pink-100 text-pink-800 px-4 py-2 rounded-full">Menulis Ilmiah</span>
+      <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full">Bertani Hidroponik</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- Pengalaman & Karier -->
+<section class="py-12 bg-gray-50" id="pengalaman">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8 lang-id active-lang">Riwayat Karier</h2>
+    <h2 class="text-3xl font-bold text-center mb-8 lang-en">Work Experience</h2>
+    <ul class="space-y-4 text-gray-700">
+      <li><strong>2024–sekarang</strong> – Founder, Simpul Project Academy</li>
+      <li><strong>2018–2019</strong> – Mentor, UIN Ar-Raniry</li>
+      <li><strong>2014–2017</strong> – Guru IPS & Musyrif, Al-Fityan School Aceh</li>
+      <li><strong>2014–2017</strong> – Guru IPS & Musyrif, Al-Fityan School Aceh</li>
+      <li><strong>2014–2017</strong> – Guru IPS & Musyrif, Al-Fityan School Aceh</li>
+      <li><strong>2017</strong> – Surveyor BIG Aceh, Pemetaan Penutup Lahan</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Publikasi -->
+<section class="py-12 bg-white" id="publikasi">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8 lang-id active-lang">Publikasi Ilmiah</h2>
+    <h2 class="text-3xl font-bold text-center mb-8 lang-en">Scientific Publications</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-semibold mb-1">The Great Urban Transition</h4>
+        <p class="text-sm text-gray-600">Q1 – Urban Studies Journal (2024)</p>
+        <p class="text-sm text-gray-600">Q1 – Urban Studies Journal (2024)</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-semibold mb-1">Digital Earth & Space Phenomena</h4>
+        <p class="text-sm text-gray-600">Q3 – JESTEC</p>
+        <p class="text-sm text-gray-600">Q3 – JESTEC</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-semibold mb-1">Ecotourism in Aceh</h4>
+        <p class="text-sm text-gray-600">Book Chapter – LPDP</p>
+        <p class="text-sm text-gray-600">Book Chapter – LPDP</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-semibold mb-1">Posthumanist Environmental Education</h4>
+        <p class="text-sm text-gray-600">Q1 – Taylor & Francis</p>
+        <p class="text-sm text-gray-600">Q1 – Taylor & Francis</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-semibold mb-1">Ecotourism in Aceh</h4>
+        <p class="text-sm text-gray-600">Book Chapter – LPDP</p>
+        <p class="text-sm text-gray-600">Book Chapter – LPDP</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-semibold mb-1">Ecotourism in Aceh</h4>
+        <p class="text-sm text-gray-600">Book Chapter – LPDP</p>
+        <p class="text-sm text-gray-600">Book Chapter – LPDP</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Galeri -->
+<section class="py-12 bg-gray-100" id="galeri">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6 lang-id active-lang">Galeri Media</h2>
+    <h2 class="text-3xl font-bold mb-6 lang-en">Media Gallery</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <img src="asset/foto braga 1.JPG" alt="Kegiatan" class="rounded shadow">
+      <video controls class="rounded shadow">
+        <source src="asset/video koleksi wisuda (1).mp4" type="video/mp4" />
+      </video>
+      <audio controls class="rounded shadow">
+        <source src="asset/Satu Arti Cinta (online-audio-converter.com).mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </div>
+</section>
+
+<!-- Form Kontak -->
+<section class="py-12 bg-white" id="kontak">
+  <div class="max-w-2xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6 lang-id active-lang">Formulir Kontak</h2>
+    <h2 class="text-3xl font-bold text-center mb-6 lang-en">Contact Form</h2>
+    <form action="https://formspree.io/f/xanjbwpd" method="POST" class="space-y-4">
+      <input type="text" name="name" required placeholder="Nama / Name" class="w-full px-4 py-2 border rounded">
+      <input type="email" name="email" required placeholder="Email" class="w-full px-4 py-2 border rounded">
+      <textarea name="message" rows="4" required placeholder="Pesan / Message" class="w-full px-4 py-2 border rounded"></textarea>
+      <button type="m.khairul311089@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500">Kirim Pesan</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center py-6">
+  <p class="text-sm">© 2025 Muhammad Khairul | <a href="https://orcid.org/0009-0004-3396-5551" class="underline">ORCID</a> | <a href="https://www.scopus.com/authid/detail.uri?authorId=58874946700" class="underline">Scopus</a></p>
+</footer>
+</body>
+</html>
+
+
+  <!-- JavaScript: Switch Bahasa + Statistik -->
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-id').forEach(el => el.classList.remove('active-lang'));
+      document.querySelectorAll('.lang-en').forEach(el => el.classList.remove('active-lang'));
+      document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('active-lang'));
+    }
+
+    // Statistik Kunjungan
+    let visits = localStorage.getItem('visitCount') || 0;
+    visits++;
+    localStorage.setItem('visitCount', visits);
+    document.getElementById("visit-count").innerText = `Website dikunjungi ${visits} kali`;
+
+    // Statistik Klik Unduh CV
+    let cvClicks = localStorage.getItem('cvClicks') || 0;
+    document.getElementById("cv-btn").addEventListener("click", () => {
+      cvClicks++;
+      localStorage.setItem('cvClicks', cvClicks);
+      document.getElementById("cv-clicks").innerText = `CV diunduh ${cvClicks} kali`;
+    });
+    document.getElementById("cv-clicks").innerText = `CV diunduh ${cvClicks} kali`;
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
